@@ -1,0 +1,24 @@
+STARTING SETUP
+1) Plug-in Raspberry pi, if not connected to wifi type:
+sudo date -s "Feb 01 09:10" by replacing correct date and time
+2) Connect cameras via USB, connect LED via optical fibre
+3) Place the sample 
+4) Plug-in LED
+5) Click on 'ueyedemo' on the Desktop, click 'Execute' (or type ueyedemo in the terminal)
+6) Click the green play button on the top-left
+7) Select the camera 1: 4102965220
+8) Adjust Exposure (to 10 ms) via Ueye -> Properties 
+9) Select adjust the sample ROI
+10) Adjust the focus (sample dissapears when in-focus)
+11) Defocus by 50 um by turning 1 full turn clock-wise (increasing numbers) - the object should becove visible, white
+12) Stop the camera (red button - third from the left)
+13) Adjust the second sample by repeating 6) - 12 selecting camera 2: 4103024141
+
+STARTING MEASUREMENT
+14) Open terminal (black icon top-left)
+15) Type (you can replace Neurons01 by the name of your measurement):
+. SetMeasurement.sh Neurons01
+16) Adjust number of cycles (Nc), waiting time in seconds (wait_time) and exposure time in ms (exposure).
+17) Fill in readme.txt
+18) Type:
+python acquisiton_2cams.py 
